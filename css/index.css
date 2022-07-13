@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  width: 20vh;
+  transition: 0.3s ease-in-out;
+}
+
+.brand-title {
+  margin: .5rem;
+}
+
+.name {
+  width: 20rem;
+  transition: opacity 1s ease-out;
+}
+.navbar-links {
+  height: 100%;
+  transform: .5s ease;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* Ends of navbar styles */
+
+/* Start of Slider styles */
+.container {
+  width: 100%;
+  height: auto;
+  background: rgba(92,88,88,0.6);
+}
+
+.slider-container {
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.prev-button,
+.next-button {
+  width: 40px;
+  height: 6px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(240,240,255,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: color 0.3s ease;
+}
+
+.prev-button {
+  left: 0;
+  
+}
+
+.next-button {
+  right: 0;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  color: white;
+}
+
+.lines{
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+}
+
+.line {
+  padding: 1.5px 10px;
+  margin: 0 3px;
+  background-color: rgba(222, 222, 233, 0.7);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sactive,
+.line:hover {
+  background-color: white;
+}
+
+.slider {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade{
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+      transition: .5s;
+  }
+}
