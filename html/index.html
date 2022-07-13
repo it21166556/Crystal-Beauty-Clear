@@ -7,7 +7,10 @@
   <title>Crystal-Beauty-Clear</title>
 
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/products.css">
   <script src="/js/index.js" defer></script>
+  <script src="https://kit.fontawesome.com/a340bc40a1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <nav class="navbar">
@@ -25,9 +28,9 @@
     <div class="navbar-links">
       <ul>
         <li> <a href="#">Home</a></li>
-        <li> <a href="#">Products</a></li>
-        <li> <a href="#">About</a></li>
-        <li> <a href="#">Contact</a></li>
+        <li> <a href="#product">Products</a></li>
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -35,6 +38,7 @@
 
   <!-- Slide show -->
   <div class="container">
+    
     <div class="slider-container">
       <div class="slider">
         <a href="#"><img src="/images/Crystal 101.png" alt="img"></a>
@@ -59,7 +63,43 @@
         <div class="line" onclick="currentSlide(4)"></div>
       </div>
     </div>
+  </div>
+  <!-- End of slide show -->
 
+  <!-- Our products -->
+  <div class="our-products">
+    <div class="ourproducts">
+      <h1 id="product">Our Products</h1>
+      <img class="product1"src="/images/Crystal 99.png" alt="products">
+      <img class="product2"src="/images/Crystal 70.png" alt="products">
+      <img class="product3"src="/images/Crystal 96.png" alt="products">
+      <img class="product4"src="/images/Crystal 69.png" alt="products">
+      <img class="product5"src="/images/Crystal 120.png" alt="products">
+      <img class="product6"src="/images/Crystal 128.png" alt="products">
+
+    </div>
+  </div>
+
+  <!-- About us -->
+  <div class="about-us">
+    <div class="aboutus">
+      <h1 id="about">About Us</h1>
+      <img src="/images/LOGO.png" alt="logo">
+      <img class="cover"src="/images/FB cover page design.png" alt="cover">
+    </div>
+  </div>
+
+  <!-- Contact us -->
+  <div class="contact-us">
+    <div class="contactus">
+      <h1 id="contact">Contact Us</h1>
+      <div class="social-links">
+        <a class="social-links-a" href="https://www.facebook.com/crystalbeautyclear.lk/"><i class="fa-brands fa-facebook-square"></i></a>
+        <a class="social-links-a" href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+        <a class="social-links-a" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-links-a" href="https://www.google.com/account"><i class="fa-brands fa-google-plus-square"></i></a>
+      </div> <!--end of social-links div tag-->
+    </div>
   </div>
 <script src="/js/slider.js"></script>
 </body>

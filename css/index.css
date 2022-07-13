@@ -168,6 +168,10 @@ img {
   .logo {
     display: none;
   }
+
+  .name {
+    width: 15rem;
+  }
   
   .toggle-button {
       display: flex;

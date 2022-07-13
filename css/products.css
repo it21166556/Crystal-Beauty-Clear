@@ -1,0 +1,9 @@
+.our-products,
+.about-us,
+.contact-us h1{
+    
+    text-align: center;
+    color: white;
+    size: 100%;
+    background-color: #333;
+}
